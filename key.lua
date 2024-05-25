@@ -28,7 +28,7 @@ Tab:AddButton({
     if key == oh then
       	print("Entered right key.")
           OrionLib:Destroy()
-          loadstring(game:HttpGet('https://raw.githubusercontent.com/bigfatman813131/bigfatmanskibid/main/yeah.rizz'))()
+          loadstring(game:HttpGet('https://raw.githubusercontent.com/ben437/fat/main/yeah.rizz'))()
           writefile(filename, "sigma")
           else
           print("Entered wrong key.")
