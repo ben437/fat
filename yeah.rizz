@@ -9,14 +9,16 @@ local G2L = {};
 local bubble = game.CoreGui:FindFirstChild("Bubble")
 
 
+
+   
+
+-- StarterGui.Bubble
 if bubble then
     
     
 else
-   
-
--- StarterGui.Bubble
 G2L["1"] = Instance.new("ScreenGui", game.CoreGui);
+end
 G2L["1"]["DisplayOrder"] = 999999999;
 G2L["1"]["Name"] = [[Bubble]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
