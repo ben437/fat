@@ -2,8 +2,17 @@ local userId = game.Players.LocalPlayer.UserId
 local thumbType = Enum.ThumbnailType.HeadShot
 local thumbSize = Enum.ThumbnailSize.Size420x420
 local thumbUrl = game:GetService("Players"):GetUserThumbnailAsync(userId, thumbType, thumbSize)
--- Instances: 54 | Scripts: 1 | Modules: 3
+local bubble = game.CoreGui:FindFirstChild("Bubble")
+
+
+if bubble then
+    
+    
+else
+   
 local G2L = {};
+
+
 
 
 -- StarterGui.Bubble
@@ -14,12 +23,16 @@ G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 G2L["1"]["ResetOnSpawn"] = false;
 
 
+
+
 -- StarterGui.Bubble.Background
 G2L["2"] = Instance.new("Frame", G2L["1"]);
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2"]["BackgroundTransparency"] = 1;
 G2L["2"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["2"]["Name"] = [[Background]];
+
+
 
 
 -- StarterGui.Bubble.Background.Emote
@@ -34,11 +47,15 @@ G2L["3"]["AutomaticSize"] = Enum.AutomaticSize.Y;
 G2L["3"]["Name"] = [[Emote]];
 
 
+
+
 -- StarterGui.Bubble.Background.Emote.UIGradient
 G2L["4"] = Instance.new("UIGradient", G2L["3"]);
 G2L["4"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(1.000, 0.7062499523162842)};
 G2L["4"]["Rotation"] = 90;
 G2L["4"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
+
+
 
 
 -- StarterGui.Bubble.Background.Emote.ScrollingFrame
@@ -56,11 +73,15 @@ G2L["5"]["Position"] = UDim2.new(0.5, 0, 0, 0);
 G2L["5"]["AutomaticSize"] = Enum.AutomaticSize.Y;
 
 
+
+
 -- StarterGui.Bubble.Background.Emote.ScrollingFrame.UIListLayout
 G2L["6"] = Instance.new("UIListLayout", G2L["5"]);
 G2L["6"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
 G2L["6"]["Padding"] = UDim.new(0.009999999776482582, 0);
 G2L["6"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
 
 
 -- StarterGui.Bubble.Background.Emote.ScrollingFrame.EmoteButton
@@ -79,9 +100,13 @@ G2L["7"]["Position"] = UDim2.new(0.11571411043405533, 0, 0, 0);
 G2L["7"]["BackgroundTransparency"] = 0.6000000238418579;
 
 
+
+
 -- StarterGui.Bubble.Background.Emote.ScrollingFrame.EmoteButton.UICorner
 G2L["8"] = Instance.new("UICorner", G2L["7"]);
 G2L["8"]["CornerRadius"] = UDim.new(0.20000000298023224, 2);
+
+
 
 
 -- StarterGui.Bubble.Background.Emote.UIStroke
@@ -91,11 +116,15 @@ G2L["9"]["Thickness"] = 3.9000000953674316;
 G2L["9"]["Transparency"] = 0.30000001192092896;
 
 
+
+
 -- StarterGui.Bubble.Background.Emote.UIStroke.UIGradient
 G2L["a"] = Instance.new("UIGradient", G2L["9"]);
 G2L["a"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(1.000, 0.7062499523162842)};
 G2L["a"]["Rotation"] = 90;
 G2L["a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
+
+
 
 
 -- StarterGui.Bubble.Background.Updates
@@ -109,11 +138,15 @@ G2L["b"]["Position"] = UDim2.new(0.37466704845428467, 0, 0.32816553115844727, 0)
 G2L["b"]["Name"] = [[Updates]];
 
 
+
+
 -- StarterGui.Bubble.Background.Updates.UIStroke
 G2L["c"] = Instance.new("UIStroke", G2L["b"]);
 G2L["c"]["Color"] = Color3.fromRGB(255, 255, 255);
 G2L["c"]["Thickness"] = 3.9000000953674316;
 G2L["c"]["Transparency"] = 0.30000001192092896;
+
+
 
 
 -- StarterGui.Bubble.Background.Updates.UIStroke.UIGradient
@@ -123,11 +156,15 @@ G2L["d"]["Rotation"] = 90;
 G2L["d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
 
 
+
+
 -- StarterGui.Bubble.Background.Updates.UIGradient
 G2L["e"] = Instance.new("UIGradient", G2L["b"]);
 G2L["e"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(1.000, 0.7062499523162842)};
 G2L["e"]["Rotation"] = 90;
 G2L["e"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
+
+
 
 
 -- StarterGui.Bubble.Background.Updates.ImageLabel
@@ -142,9 +179,13 @@ G2L["f"]["BackgroundTransparency"] = 0.6499999761581421;
 G2L["f"]["Position"] = UDim2.new(0.4935310184955597, 0, 0.4738950729370117, 0);
 
 
+
+
 -- StarterGui.Bubble.Background.Updates.ImageLabel.UICorner
 G2L["10"] = Instance.new("UICorner", G2L["f"]);
 G2L["10"]["CornerRadius"] = UDim.new(500, 500);
+
+
 
 
 -- StarterGui.Bubble.Background.Updates.ImageLabel.UIAspectRatioConstraint
@@ -153,10 +194,16 @@ G2L["11"] = Instance.new("UIAspectRatioConstraint", G2L["f"]);
 
 
 
+
+
+
+
 -- StarterGui.Bubble.Background.Updates.ImageLabel.UIStroke
 G2L["12"] = Instance.new("UIStroke", G2L["f"]);
 G2L["12"]["Thickness"] = 2;
 G2L["12"]["Transparency"] = 0.44999998807907104;
+
+
 
 
 -- StarterGui.Bubble.Background.Updates.Version
@@ -178,9 +225,13 @@ G2L["13"]["BackgroundTransparency"] = 1;
 G2L["13"]["Position"] = UDim2.new(0.49688202142715454, 0, 0.046341076493263245, 0);
 
 
+
+
 -- StarterGui.Bubble.Background.Updates.Version.UIAspectRatioConstraint
 G2L["14"] = Instance.new("UIAspectRatioConstraint", G2L["13"]);
 G2L["14"]["AspectRatio"] = 7.7530975341796875;
+
+
 
 
 -- StarterGui.Bubble.Background.Updates.UpdateNotice
@@ -196,11 +247,15 @@ G2L["15"]["Position"] = UDim2.new(1.5759036540985107, 0, 0.5011399388313293, 0);
 G2L["15"]["Name"] = [[UpdateNotice]];
 
 
+
+
 -- StarterGui.Bubble.Background.Updates.UpdateNotice.UIStroke
 G2L["16"] = Instance.new("UIStroke", G2L["15"]);
 G2L["16"]["Color"] = Color3.fromRGB(255, 255, 255);
 G2L["16"]["Thickness"] = 3.9000000953674316;
 G2L["16"]["Transparency"] = 0.30000001192092896;
+
+
 
 
 -- StarterGui.Bubble.Background.Updates.UpdateNotice.UIStroke.UIGradient
@@ -210,11 +265,15 @@ G2L["17"]["Rotation"] = 90;
 G2L["17"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
 
 
+
+
 -- StarterGui.Bubble.Background.Updates.UpdateNotice.UIGradient
 G2L["18"] = Instance.new("UIGradient", G2L["15"]);
 G2L["18"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(1.000, 0.7062499523162842)};
 G2L["18"]["Rotation"] = 90;
 G2L["18"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
+
+
 
 
 -- StarterGui.Bubble.Background.Updates.UpdateNotice.ScrollingFrame
@@ -228,6 +287,8 @@ G2L["19"]["Size"] = UDim2.new(0.9993212819099426, 0, 0.9982827305793762, 0);
 G2L["19"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["19"]["ScrollBarThickness"] = 0;
+
+
 
 
 -- StarterGui.Bubble.Background.Updates.UpdateNotice.ScrollingFrame.TextLabel
@@ -247,10 +308,14 @@ G2L["1a"]["BackgroundTransparency"] = 1;
 G2L["1a"]["Position"] = UDim2.new(0, 0, -5.8462799046310465e-08, 0);
 
 
+
+
 -- StarterGui.Bubble.Background.Updates.UpdateNotice.ScrollingFrame.UIListLayout
 G2L["1b"] = Instance.new("UIListLayout", G2L["19"]);
 G2L["1b"]["Padding"] = UDim.new(0.014999999664723873, 0);
 G2L["1b"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
 
 
 -- StarterGui.Bubble.Background.Updates.UpdateNotice.ScrollingFrame.TextLabel
@@ -269,6 +334,8 @@ G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1c"]["Text"] = [[ New Added:]];
 G2L["1c"]["BackgroundTransparency"] = 1;
 G2L["1c"]["Position"] = UDim2.new(0, 0, -5.8462799046310465e-08, 0);
+
+
 
 
 -- StarterGui.Bubble.Background.Updates.UpdateNotice.ScrollingFrame.TextLabel
@@ -292,6 +359,8 @@ G2L["1d"]["BackgroundTransparency"] = 1;
 G2L["1d"]["Position"] = UDim2.new(0, 0, 0.21362356841564178, 0);
 
 
+
+
 -- StarterGui.Bubble.Background.Updates.UpdateNotice.ScrollingFrame.TextLabel
 G2L["1e"] = Instance.new("TextLabel", G2L["19"]);
 G2L["1e"]["TextWrapped"] = true;
@@ -307,6 +376,8 @@ G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1e"]["Text"] = [[Whats coming on Wednesday!]];
 G2L["1e"]["BackgroundTransparency"] = 1;
 G2L["1e"]["Position"] = UDim2.new(0, 0, -5.8462799046310465e-08, 0);
+
+
 
 
 -- StarterGui.Bubble.Background.Updates.UpdateNotice.ScrollingFrame.TextLabel
@@ -327,6 +398,8 @@ G2L["1f"]["BackgroundTransparency"] = 1;
 G2L["1f"]["Position"] = UDim2.new(0, 0, 0.3630230724811554, 0);
 
 
+
+
 -- StarterGui.Bubble.Background.Updates.UpdateNotice.ScrollingFrame.TextLabel
 G2L["20"] = Instance.new("TextLabel", G2L["19"]);
 G2L["20"]["TextWrapped"] = true;
@@ -345,6 +418,8 @@ G2L["20"]["BackgroundTransparency"] = 1;
 G2L["20"]["Position"] = UDim2.new(0.05273949354887009, 0, 0.9336599111557007, 0);
 
 
+
+
 -- StarterGui.Bubble.Background.Updates.UpdateNotice.ScrollingFrame.TextLabel
 G2L["21"] = Instance.new("TextLabel", G2L["19"]);
 G2L["21"]["TextWrapped"] = true;
@@ -361,6 +436,8 @@ G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["21"]["Text"] = [[]];
 G2L["21"]["BackgroundTransparency"] = 1;
 G2L["21"]["Position"] = UDim2.new(0, 0, 0.3630230724811554, 0);
+
+
 
 
 -- StarterGui.Bubble.Background.Updates.Title
@@ -384,9 +461,13 @@ G2L["22"]["BackgroundTransparency"] = 1;
 G2L["22"]["Position"] = UDim2.new(0.4968821108341217, 0, 0.8887718915939331, 0);
 
 
+
+
 -- StarterGui.Bubble.Background.Updates.Title.UIAspectRatioConstraint
 G2L["23"] = Instance.new("UIAspectRatioConstraint", G2L["22"]);
 G2L["23"]["AspectRatio"] = 7.7530975341796875;
+
+
 
 
 -- StarterGui.Bubble.Background.Updates.By
@@ -408,9 +489,13 @@ G2L["24"]["BackgroundTransparency"] = 1;
 G2L["24"]["Position"] = UDim2.new(0.496881902217865, 0, 0.9656418561935425, 0);
 
 
+
+
 -- StarterGui.Bubble.Background.Updates.By.UIAspectRatioConstraint
 G2L["25"] = Instance.new("UIAspectRatioConstraint", G2L["24"]);
 G2L["25"]["AspectRatio"] = 7.7530975341796875;
+
+
 
 
 -- StarterGui.Bubble.Background.Animate
@@ -425,11 +510,15 @@ G2L["26"]["AutomaticSize"] = Enum.AutomaticSize.Y;
 G2L["26"]["Name"] = [[Animate]];
 
 
+
+
 -- StarterGui.Bubble.Background.Animate.UIGradient
 G2L["27"] = Instance.new("UIGradient", G2L["26"]);
 G2L["27"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(1.000, 0.7062499523162842)};
 G2L["27"]["Rotation"] = 90;
 G2L["27"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
+
+
 
 
 -- StarterGui.Bubble.Background.Animate.ScrollingFrame
@@ -448,11 +537,15 @@ G2L["28"]["Position"] = UDim2.new(0.5, 0, 0, 0);
 G2L["28"]["AutomaticSize"] = Enum.AutomaticSize.XY;
 
 
+
+
 -- StarterGui.Bubble.Background.Animate.ScrollingFrame.UIListLayout
 G2L["29"] = Instance.new("UIListLayout", G2L["28"]);
 G2L["29"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
 G2L["29"]["Padding"] = UDim.new(0.009999999776482582, 0);
 G2L["29"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
 
 
 -- StarterGui.Bubble.Background.Animate.ScrollingFrame.AnimationButton
@@ -471,9 +564,13 @@ G2L["2a"]["Position"] = UDim2.new(0.11571409553289413, 0, 6.622312298532051e-08,
 G2L["2a"]["BackgroundTransparency"] = 0.6000000238418579;
 
 
+
+
 -- StarterGui.Bubble.Background.Animate.ScrollingFrame.AnimationButton.UICorner
 G2L["2b"] = Instance.new("UICorner", G2L["2a"]);
 G2L["2b"]["CornerRadius"] = UDim.new(0.20000000298023224, 2);
+
+
 
 
 -- StarterGui.Bubble.Background.Animate.UIStroke
@@ -483,6 +580,8 @@ G2L["2c"]["Thickness"] = 3.9000000953674316;
 G2L["2c"]["Transparency"] = 0.30000001192092896;
 
 
+
+
 -- StarterGui.Bubble.Background.Animate.UIStroke.UIGradient
 G2L["2d"] = Instance.new("UIGradient", G2L["2c"]);
 G2L["2d"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(1.000, 0.7062499523162842)};
@@ -490,9 +589,13 @@ G2L["2d"]["Rotation"] = 90;
 G2L["2d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
 
 
+
+
 -- StarterGui.Bubble.Main
 G2L["2e"] = Instance.new("LocalScript", G2L["1"]);
 G2L["2e"]["Name"] = [[Main]];
+
+
 
 
 -- StarterGui.Bubble.OtherModule
@@ -500,9 +603,13 @@ G2L["2f"] = Instance.new("ModuleScript", G2L["1"]);
 G2L["2f"]["Name"] = [[OtherModule]];
 
 
+
+
 -- StarterGui.Bubble.AnimationPackages
 G2L["30"] = Instance.new("ModuleScript", G2L["1"]);
 G2L["30"]["Name"] = [[AnimationPackages]];
+
+
 
 
 -- StarterGui.Bubble.Emotes
@@ -510,9 +617,13 @@ G2L["31"] = Instance.new("ModuleScript", G2L["1"]);
 G2L["31"]["Name"] = [[Emotes]];
 
 
+
+
 -- StarterGui.Bubble.Mobile
 G2L["32"] = Instance.new("Folder", G2L["1"]);
 G2L["32"]["Name"] = [[Mobile]];
+
+
 
 
 -- StarterGui.Bubble.Mobile.OpenCloseFrame
@@ -525,6 +636,8 @@ G2L["33"]["Size"] = UDim2.new(0.06543102115392685, 0, 0.04599211737513542, 0);
 G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["33"]["Position"] = UDim2.new(0.5440000295639038, 0, -0.02500000037252903, 0);
 G2L["33"]["Name"] = [[OpenCloseFrame]];
+
+
 
 
 -- StarterGui.Bubble.Mobile.OpenCloseFrame.Button
@@ -546,6 +659,8 @@ G2L["34"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 G2L["34"]["BackgroundTransparency"] = 1;
 
 
+
+
 -- StarterGui.Bubble.Mobile.OpenCloseFrame.UIGradient
 G2L["35"] = Instance.new("UIGradient", G2L["33"]);
 G2L["35"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(1.000, 0.7062499523162842)};
@@ -553,9 +668,13 @@ G2L["35"]["Rotation"] = 90;
 G2L["35"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
 
 
+
+
 -- StarterGui.Bubble.Mobile.OpenCloseFrame.UICorner
 G2L["36"] = Instance.new("UICorner", G2L["33"]);
 G2L["36"]["CornerRadius"] = UDim.new(0, 5);
+
+
 
 
 -- Require G2L wrapper
@@ -574,13 +693,19 @@ local function require(Module:ModuleScript)
 end
 
 
+
+
 G2L_MODULES[G2L["2f"]] = {
         Closure = function()
                 local script = G2L["2f"];
                 local other = {}
 
 
+
+
                 local afterName = ""
+
+
 
 
                 local function GenerateName (length:number)
@@ -589,7 +714,11 @@ G2L_MODULES[G2L["2f"]] = {
                         local alphacodes = [[`~!@#$%^&*()-_=+[]{}\|;':",<.>?/]]
 
 
+
+
                         local returnToSend = ""
+
+
 
 
                         for i = 1, length do
@@ -613,8 +742,12 @@ G2L_MODULES[G2L["2f"]] = {
                         end
 
 
+
+
                         return returnToSend
                 end
+
+
 
 
                 function other:MakeAnimate(speaker)
@@ -623,11 +756,17 @@ G2L_MODULES[G2L["2f"]] = {
                                 afterName = GenerateName(20)
 
 
+
+
                                 local beforeName = afterName
                                 local G2L = {};
 
 
+
+
                                 G2L["1"] = script
+
+
 
 
                                 G2L["2"] = Instance.new("NumberValue", G2L["1"]);
@@ -635,8 +774,12 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["2"]["Name"] = [[ScaleDampeningPercent]];
 
 
+
+
                                 G2L["3"] = Instance.new("StringValue", G2L["1"]);
                                 G2L["3"]["Name"] = [[cheer]];
+
+
 
 
                                 G2L["4"] = Instance.new("Animation", G2L["3"]);
@@ -644,8 +787,12 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["4"]["Name"] = [[CheerAnim]];
 
 
+
+
                                 G2L["5"] = Instance.new("StringValue", G2L["1"]);
                                 G2L["5"]["Name"] = [[climb]];
+
+
 
 
                                 G2L["6"] = Instance.new("Animation", G2L["5"]);
@@ -653,8 +800,12 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["6"]["Name"] = [[ClimbAnim]];
 
 
+
+
                                 G2L["7"] = Instance.new("StringValue", G2L["1"]);
                                 G2L["7"]["Name"] = [[dance]];
+
+
 
 
                                 G2L["8"] = Instance.new("Animation", G2L["7"]);
@@ -662,9 +813,13 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["8"]["Name"] = [[Animation1]];
 
 
+
+
                                 G2L["9"] = Instance.new("NumberValue", G2L["8"]);
                                 G2L["9"]["Value"] = 10;
                                 G2L["9"]["Name"] = [[Weight]];
+
+
 
 
                                 G2L["a"] = Instance.new("Animation", G2L["7"]);
@@ -672,9 +827,13 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["a"]["Name"] = [[Animation2]];
 
 
+
+
                                 G2L["b"] = Instance.new("NumberValue", G2L["a"]);
                                 G2L["b"]["Value"] = 10;
                                 G2L["b"]["Name"] = [[Weight]];
+
+
 
 
                                 G2L["c"] = Instance.new("Animation", G2L["7"]);
@@ -682,13 +841,19 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["c"]["Name"] = [[Animation3]];
 
 
+
+
                                 G2L["d"] = Instance.new("NumberValue", G2L["c"]);
                                 G2L["d"]["Value"] = 10;
                                 G2L["d"]["Name"] = [[Weight]];
 
 
+
+
                                 G2L["e"] = Instance.new("StringValue", G2L["1"]);
                                 G2L["e"]["Name"] = [[dance2]];
+
+
 
 
                                 G2L["f"] = Instance.new("Animation", G2L["e"]);
@@ -696,9 +861,13 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["f"]["Name"] = [[Animation1]];
 
 
+
+
                                 G2L["10"] = Instance.new("NumberValue", G2L["f"]);
                                 G2L["10"]["Value"] = 10;
                                 G2L["10"]["Name"] = [[Weight]];
+
+
 
 
                                 G2L["11"] = Instance.new("Animation", G2L["e"]);
@@ -706,9 +875,13 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["11"]["Name"] = [[Animation2]];
 
 
+
+
                                 G2L["12"] = Instance.new("NumberValue", G2L["11"]);
                                 G2L["12"]["Value"] = 10;
                                 G2L["12"]["Name"] = [[Weight]];
+
+
 
 
                                 -- StarterGui.ScreenGui.dance2.Animation3
@@ -717,14 +890,20 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["13"]["Name"] = [[Animation3]];
 
 
+
+
                                 -- StarterGui.ScreenGui.dance2.Animation3.Weight
                                 G2L["14"] = Instance.new("NumberValue", G2L["13"]);
                                 G2L["14"]["Value"] = 10;
                                 G2L["14"]["Name"] = [[Weight]];
 
 
+
+
                                 G2L["15"] = Instance.new("StringValue", G2L["1"]);
                                 G2L["15"]["Name"] = [[dance3]];
+
+
 
 
                                 G2L["16"] = Instance.new("Animation", G2L["15"]);
@@ -732,9 +911,13 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["16"]["Name"] = [[Animation1]];
 
 
+
+
                                 G2L["17"] = Instance.new("NumberValue", G2L["16"]);
                                 G2L["17"]["Value"] = 10;
                                 G2L["17"]["Name"] = [[Weight]];
+
+
 
 
                                 G2L["18"] = Instance.new("Animation", G2L["15"]);
@@ -742,9 +925,13 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["18"]["Name"] = [[Animation2]];
 
 
+
+
                                 G2L["19"] = Instance.new("NumberValue", G2L["18"]);
                                 G2L["19"]["Value"] = 10;
                                 G2L["19"]["Name"] = [[Weight]];
+
+
 
 
                                 G2L["1a"] = Instance.new("Animation", G2L["15"]);
@@ -752,13 +939,19 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["1a"]["Name"] = [[Animation3]];
 
 
+
+
                                 G2L["1b"] = Instance.new("NumberValue", G2L["1a"]);
                                 G2L["1b"]["Value"] = 10;
                                 G2L["1b"]["Name"] = [[Weight]];
 
 
+
+
                                 G2L["1c"] = Instance.new("StringValue", G2L["1"]);
                                 G2L["1c"]["Name"] = [[fall]];
+
+
 
 
                                 G2L["1d"] = Instance.new("Animation", G2L["1c"]);
@@ -766,8 +959,12 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["1d"]["Name"] = [[FallAnim]];
 
 
+
+
                                 G2L["1e"] = Instance.new("StringValue", G2L["1"]);
                                 G2L["1e"]["Name"] = [[idle]];
+
+
 
 
                                 G2L["1f"] = Instance.new("Animation", G2L["1e"]);
@@ -775,9 +972,13 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["1f"]["Name"] = [[Animation1]];
 
 
+
+
                                 G2L["20"] = Instance.new("NumberValue", G2L["1f"]);
                                 G2L["20"]["Value"] = 9;
                                 G2L["20"]["Name"] = [[Weight]];
+
+
 
 
                                 G2L["21"] = Instance.new("Animation", G2L["1e"]);
@@ -785,13 +986,19 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["21"]["Name"] = [[Animation2]];
 
 
+
+
                                 G2L["22"] = Instance.new("NumberValue", G2L["21"]);
                                 G2L["22"]["Value"] = 1;
                                 G2L["22"]["Name"] = [[Weight]];
 
 
+
+
                                 G2L["23"] = Instance.new("StringValue", G2L["1"]);
                                 G2L["23"]["Name"] = [[jump]];
+
+
 
 
                                 G2L["24"] = Instance.new("Animation", G2L["23"]);
@@ -799,8 +1006,12 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["24"]["Name"] = [[JumpAnim]];
 
 
+
+
                                 G2L["25"] = Instance.new("StringValue", G2L["1"]);
                                 G2L["25"]["Name"] = [[laugh]];
+
+
 
 
                                 G2L["26"] = Instance.new("Animation", G2L["25"]);
@@ -808,8 +1019,12 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["26"]["Name"] = [[LaughAnim]];
 
 
+
+
                                 G2L["27"] = Instance.new("StringValue", G2L["1"]);
                                 G2L["27"]["Name"] = [[mood]];
+
+
 
 
                                 G2L["28"] = Instance.new("Animation", G2L["27"]);
@@ -817,8 +1032,12 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["28"]["Name"] = [[Animation1]];
 
 
+
+
                                 G2L["29"] = Instance.new("StringValue", G2L["1"]);
                                 G2L["29"]["Name"] = [[point]];
+
+
 
 
                                 G2L["2a"] = Instance.new("Animation", G2L["29"]);
@@ -826,8 +1045,12 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["2a"]["Name"] = [[PointAnim]];
 
 
+
+
                                 G2L["2b"] = Instance.new("StringValue", G2L["1"]);
                                 G2L["2b"]["Name"] = [[run]];
+
+
 
 
                                 G2L["2c"] = Instance.new("Animation", G2L["2b"]);
@@ -835,8 +1058,12 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["2c"]["Name"] = [[RunAnim]];
 
 
+
+
                                 G2L["2d"] = Instance.new("StringValue", G2L["1"]);
                                 G2L["2d"]["Name"] = [[sit]];
+
+
 
 
                                 G2L["2e"] = Instance.new("Animation", G2L["2d"]);
@@ -844,8 +1071,12 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["2e"]["Name"] = [[SitAnim]];
 
 
+
+
                                 G2L["2f"] = Instance.new("StringValue", G2L["1"]);
                                 G2L["2f"]["Name"] = [[swim]];
+
+
 
 
                                 G2L["30"] = Instance.new("Animation", G2L["2f"]);
@@ -853,8 +1084,12 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["30"]["Name"] = [[Swim]];
 
 
+
+
                                 G2L["31"] = Instance.new("StringValue", G2L["1"]);
                                 G2L["31"]["Name"] = [[swimidle]];
+
+
 
 
                                 G2L["32"] = Instance.new("Animation", G2L["31"]);
@@ -862,8 +1097,12 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["32"]["Name"] = [[SwimIdle]];
 
 
+
+
                                 G2L["33"] = Instance.new("StringValue", G2L["1"]);
                                 G2L["33"]["Name"] = [[toollunge]];
+
+
 
 
                                 G2L["34"] = Instance.new("Animation", G2L["33"]);
@@ -871,8 +1110,12 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["34"]["Name"] = [[ToolLungeAnim]];
 
 
+
+
                                 G2L["35"] = Instance.new("StringValue", G2L["1"]);
                                 G2L["35"]["Name"] = [[toolnone]];
+
+
 
 
                                 G2L["36"] = Instance.new("Animation", G2L["35"]);
@@ -880,8 +1123,12 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["36"]["Name"] = [[ToolNoneAnim]];
 
 
+
+
                                 G2L["37"] = Instance.new("StringValue", G2L["1"]);
                                 G2L["37"]["Name"] = [[toolslash]];
+
+
 
 
                                 G2L["38"] = Instance.new("Animation", G2L["37"]);
@@ -889,8 +1136,12 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["38"]["Name"] = [[ToolSlashAnim]];
 
 
+
+
                                 G2L["39"] = Instance.new("StringValue", G2L["1"]);
                                 G2L["39"]["Name"] = [[walk]];
+
+
 
 
                                 G2L["3a"] = Instance.new("Animation", G2L["39"]);
@@ -898,8 +1149,12 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["3a"]["Name"] = [[WalkAnim]];
 
 
+
+
                                 G2L["3b"] = Instance.new("StringValue", G2L["1"]);
                                 G2L["3b"]["Name"] = [[wave]];
+
+
 
 
                                 G2L["3c"] = Instance.new("Animation", G2L["3b"]);
@@ -907,8 +1162,12 @@ G2L_MODULES[G2L["2f"]] = {
                                 G2L["3c"]["Name"] = [[WaveAnim]];
 
 
+
+
                                 G2L["3d"] = Instance.new("BindableFunction", G2L["1"]);
                                 G2L["3d"]["Name"] = [[PlayEmote]];
+
+
 
 
                                 local Character = script.Parent
@@ -916,15 +1175,23 @@ G2L_MODULES[G2L["2f"]] = {
                                 local pose = "Standing"
 
 
+
+
                                 local userNoUpdateOnLoopSuccess, userNoUpdateOnLoopValue = pcall(function() return UserSettings():IsUserFeatureEnabled("UserNoUpdateOnLoop") end)
                                 local userNoUpdateOnLoop = userNoUpdateOnLoopSuccess and userNoUpdateOnLoopValue
+
+
 
 
                                 local AnimationSpeedDampeningObject = script:FindFirstChild("ScaleDampeningPercent")
                                 local HumanoidHipHeight = 2
 
 
+
+
                                 local EMOTE_TRANSITION_TIME = 0.1
+
+
 
 
                                 local currentAnim = ""
@@ -934,11 +1201,17 @@ G2L_MODULES[G2L["2f"]] = {
                                 local currentAnimSpeed = 1.0
 
 
+
+
                                 local runAnimTrack = nil
                                 local runAnimKeyframeHandler = nil
 
 
+
+
                                 local PreloadedAnims = {}
+
+
 
 
                                 local animTable = {}
@@ -1011,20 +1284,30 @@ G2L_MODULES[G2L["2f"]] = {
                                 }
 
 
+
+
                                 wait(0.100)
+
+
 
 
                                 -- Existance in this list signifies that it is an emote, the value indicates if it is a looping emote
                                 local emoteNames = { wave = false, point = false, dance = true, dance2 = true, dance3 = true, laugh = false, cheer = false}
 
 
+
+
                                 math.randomseed(tick())
+
+
 
 
                                 function findExistingAnimationInSet(set, anim)
                                         if set == nil or anim == nil then
                                                 return 0
                                         end
+
+
 
 
                                         for idx = 1, set.count, 1 do 
@@ -1034,8 +1317,12 @@ G2L_MODULES[G2L["2f"]] = {
                                         end
 
 
+
+
                                         return 0
                                 end
+
+
 
 
                                 function configureAnimationSet(name, fileList)
@@ -1050,7 +1337,11 @@ G2L_MODULES[G2L["2f"]] = {
                                         animTable[name].connections = {}
 
 
+
+
                                         local allowCustomAnimations = true
+
+
 
 
                                         local success, msg = pcall(function() allowCustomAnimations = game:GetService("StarterPlayer").AllowCustomAnimations end)
@@ -1059,11 +1350,15 @@ G2L_MODULES[G2L["2f"]] = {
                                         end
 
 
+
+
                                         -- check for config values
                                         local config = script:FindFirstChild(name)
                                         if (allowCustomAnimations and config ~= nil) then
                                                 table.insert(animTable[name].connections, config.ChildAdded:connect(function(child) configureAnimationSet(name, fileList) end))
                                                 table.insert(animTable[name].connections, config.ChildRemoved:connect(function(child) configureAnimationSet(name, fileList) end))
+
+
 
 
                                                 local idx = 0
@@ -1088,6 +1383,8 @@ G2L_MODULES[G2L["2f"]] = {
                                         end
 
 
+
+
                                         -- fallback to defaults
                                         if (animTable[name].count <= 0) then
                                                 for idx, anim in pairs(fileList) do
@@ -1102,6 +1399,8 @@ G2L_MODULES[G2L["2f"]] = {
                                         end
 
 
+
+
                                         -- preload anims
                                         for i, animType in pairs(animTable) do
                                                 for idx = 1, animType.count, 1 do
@@ -1114,7 +1413,11 @@ G2L_MODULES[G2L["2f"]] = {
                                 end
 
 
+
+
                                 ------------------------------------------------------------------------------------------------------------
+
+
 
 
                                 function configureAnimationSetOld(name, fileList)
@@ -1129,13 +1432,19 @@ G2L_MODULES[G2L["2f"]] = {
                                         animTable[name].connections = {}
 
 
+
+
                                         local allowCustomAnimations = true
+
+
 
 
                                         local success, msg = pcall(function() allowCustomAnimations = game:GetService("StarterPlayer").AllowCustomAnimations end)
                                         if not success then
                                                 allowCustomAnimations = true
                                         end
+
+
 
 
                                         -- check for config values
@@ -1163,6 +1472,8 @@ G2L_MODULES[G2L["2f"]] = {
                                         end
 
 
+
+
                                         -- fallback to defaults
                                         if (animTable[name].count <= 0) then
                                                 for idx, anim in pairs(fileList) do
@@ -1178,6 +1489,8 @@ G2L_MODULES[G2L["2f"]] = {
                                         end
 
 
+
+
                                         -- preload anims
                                         for i, animType in pairs(animTable) do
                                                 for idx = 1, animType.count, 1 do 
@@ -1185,6 +1498,8 @@ G2L_MODULES[G2L["2f"]] = {
                                                 end
                                         end
                                 end
+
+
 
 
                                 -- Setup animation objects
@@ -1196,8 +1511,12 @@ G2L_MODULES[G2L["2f"]] = {
                                 end
 
 
+
+
                                 script.ChildAdded:connect(scriptChildModified)
                                 script.ChildRemoved:connect(scriptChildModified)
+
+
 
 
                                 -- Clear any existing animation tracks
@@ -1212,12 +1531,18 @@ G2L_MODULES[G2L["2f"]] = {
                                 end
 
 
+
+
                                 for name, fileList in pairs(animNames) do 
                                         configureAnimationSet(name, fileList)
                                 end        
 
 
+
+
                                 -- ANIMATION
+
+
 
 
                                 -- declarations
@@ -1225,22 +1550,34 @@ G2L_MODULES[G2L["2f"]] = {
                                 local toolAnimTime = 0
 
 
+
+
                                 local jumpAnimTime = 0
                                 local jumpAnimDuration = 0.31
+
+
 
 
                                 local toolTransitionTime = 0.1
                                 local fallTransitionTime = 0.2
 
 
+
+
                                 local currentlyPlayingEmote = false
+
+
 
 
                                 -- functions
 
 
+
+
                                 function stopAllAnimations()
                                         local oldAnim = currentAnim
+
+
 
 
                                         -- return to idle if finishing an emote
@@ -1249,10 +1586,14 @@ G2L_MODULES[G2L["2f"]] = {
                                         end
 
 
+
+
                                         if currentlyPlayingEmote then
                                                 oldAnim = "idle"
                                                 currentlyPlayingEmote = false
                                         end
+
+
 
 
                                         currentAnim = ""
@@ -1262,6 +1603,8 @@ G2L_MODULES[G2L["2f"]] = {
                                         end
 
 
+
+
                                         if (currentAnimTrack ~= nil) then
                                                 currentAnimTrack:Stop()
                                                 currentAnimTrack:Destroy()
@@ -1269,10 +1612,14 @@ G2L_MODULES[G2L["2f"]] = {
                                         end
 
 
+
+
                                         -- clean up walk if there is one
                                         if (runAnimKeyframeHandler ~= nil) then
                                                 runAnimKeyframeHandler:disconnect()
                                         end
+
+
 
 
                                         if (runAnimTrack ~= nil) then
@@ -1282,8 +1629,12 @@ G2L_MODULES[G2L["2f"]] = {
                                         end
 
 
+
+
                                         return oldAnim
                                 end
+
+
 
 
                                 function getHeightScale()
@@ -1291,6 +1642,8 @@ G2L_MODULES[G2L["2f"]] = {
                                                 if not Humanoid.AutomaticScalingEnabled then
                                                         return 1
                                                 end
+
+
 
 
                                                 local scale = Humanoid.HipHeight / HumanoidHipHeight
@@ -1306,12 +1659,16 @@ G2L_MODULES[G2L["2f"]] = {
                                 end
 
 
+
+
                                 local function rootMotionCompensation(speed)
                                         local speedScaled = speed * 1.25
                                         local heightScale = getHeightScale()
                                         local runSpeed = speedScaled / heightScale
                                         return runSpeed
                                 end
+
+
 
 
                                 local smallButNotZero = 0.0001
@@ -1321,10 +1678,14 @@ G2L_MODULES[G2L["2f"]] = {
                                         local runSpeed = rootMotionCompensation(speed)
 
 
+
+
                                         local walkAnimationWeight = smallButNotZero
                                         local runAnimationWeight = smallButNotZero
                                         local walkAnimationTimewarp = runSpeed/normalizedWalkSpeed
                                         local runAnimationTimerwarp = runSpeed/normalizedRunSpeed
+
+
 
 
                                         if runSpeed <= normalizedWalkSpeed then
@@ -1345,6 +1706,8 @@ G2L_MODULES[G2L["2f"]] = {
                                 end
 
 
+
+
                                 function setAnimationSpeed(speed)
                                         if currentAnim == "walk" then
                                                 setRunSpeed(speed)
@@ -1355,6 +1718,8 @@ G2L_MODULES[G2L["2f"]] = {
                                                 end
                                         end
                                 end
+
+
 
 
                                 function keyFrameReachedFunc(frameName)
@@ -1379,6 +1744,8 @@ G2L_MODULES[G2L["2f"]] = {
                                                         end
 
 
+
+
                                                         if currentlyPlayingEmote then
                                                                 if currentAnimTrack.Looped then
                                                                         -- Allow the emote to loop
@@ -1386,9 +1753,13 @@ G2L_MODULES[G2L["2f"]] = {
                                                                 end
 
 
+
+
                                                                 repeatAnim = "idle"
                                                                 currentlyPlayingEmote = false
                                                         end
+
+
 
 
                                                         local animSpeed = currentAnimSpeed
@@ -1397,6 +1768,8 @@ G2L_MODULES[G2L["2f"]] = {
                                                 end
                                         end
                                 end
+
+
 
 
                                 function rollAnimation(animName)
@@ -1411,15 +1784,21 @@ G2L_MODULES[G2L["2f"]] = {
                                 end
 
 
+
+
                                 local function switchToAnim(anim, animName, transitionTime, humanoid)
                                         -- switch animation                
                                         if (anim ~= currentAnimInstance) then
+
+
 
 
                                                 if (currentAnimTrack ~= nil) then
                                                         currentAnimTrack:Stop(transitionTime)
                                                         currentAnimTrack:Destroy()
                                                 end
+
+
 
 
                                                 if (runAnimTrack ~= nil) then
@@ -1431,7 +1810,11 @@ G2L_MODULES[G2L["2f"]] = {
                                                 end
 
 
+
+
                                                 currentAnimSpeed = 1.0
+
+
 
 
                                                 -- load it to the humanoid; get AnimationTrack
@@ -1439,10 +1822,14 @@ G2L_MODULES[G2L["2f"]] = {
                                                 currentAnimTrack.Priority = Enum.AnimationPriority.Core
 
 
+
+
                                                 -- play the animation
                                                 currentAnimTrack:Play(transitionTime)
                                                 currentAnim = animName
                                                 currentAnimInstance = anim
+
+
 
 
                                                 -- set up keyframe name triggers
@@ -1452,15 +1839,21 @@ G2L_MODULES[G2L["2f"]] = {
                                                 currentAnimKeyframeHandler = currentAnimTrack.KeyframeReached:connect(keyFrameReachedFunc)
 
 
+
+
                                                 -- check to see if we need to blend a walk/run animation
                                                 if animName == "walk" then
                                                         local runAnimName = "run"
                                                         local runIdx = rollAnimation(runAnimName)
 
 
+
+
                                                         runAnimTrack = humanoid:LoadAnimation(animTable[runAnimName][runIdx].anim)
                                                         runAnimTrack.Priority = Enum.AnimationPriority.Core
                                                         runAnimTrack:Play(transitionTime)                
+
+
 
 
                                                         if (runAnimKeyframeHandler ~= nil) then
@@ -1472,14 +1865,20 @@ G2L_MODULES[G2L["2f"]] = {
                                 end
 
 
+
+
                                 function playAnimation(animName, transitionTime, humanoid)         
                                         local idx = rollAnimation(animName)
                                         local anim = animTable[animName][idx].anim
 
 
+
+
                                         switchToAnim(anim, animName, transitionTime, humanoid)
                                         currentlyPlayingEmote = false
                                 end
+
+
 
 
                                 function playEmote(emoteAnim, transitionTime, humanoid)
@@ -1488,14 +1887,20 @@ G2L_MODULES[G2L["2f"]] = {
                                 end
 
 
+
+
                                 -------------------------------------------------------------------------------------------
                                 -------------------------------------------------------------------------------------------
+
+
 
 
                                 local toolAnimName = ""
                                 local toolAnimTrack = nil
                                 local toolAnimInstance = nil
                                 local currentToolAnimKeyframeHandler = nil
+
+
 
 
                                 function toolKeyFrameReachedFunc(frameName)
@@ -1507,12 +1912,20 @@ G2L_MODULES[G2L["2f"]] = {
 
 
 
+
+
+
+
                                 function playToolAnimation(animName, transitionTime, humanoid, priority)                         
                                         local idx = rollAnimation(animName)
                                         local anim = animTable[animName][idx].anim
 
 
+
+
                                         if (toolAnimInstance ~= anim) then
+
+
 
 
                                                 if (toolAnimTrack ~= nil) then
@@ -1522,11 +1935,15 @@ G2L_MODULES[G2L["2f"]] = {
                                                 end
 
 
+
+
                                                 -- load it to the humanoid; get AnimationTrack
                                                 toolAnimTrack = humanoid:LoadAnimation(anim)
                                                 if priority then
                                                         toolAnimTrack.Priority = priority
                                                 end
+
+
 
 
                                                 -- play the animation
@@ -1535,18 +1952,26 @@ G2L_MODULES[G2L["2f"]] = {
                                                 toolAnimInstance = anim
 
 
+
+
                                                 currentToolAnimKeyframeHandler = toolAnimTrack.KeyframeReached:connect(toolKeyFrameReachedFunc)
                                         end
                                 end
+
+
 
 
                                 function stopToolAnimations()
                                         local oldAnim = toolAnimName
 
 
+
+
                                         if (currentToolAnimKeyframeHandler ~= nil) then
                                                 currentToolAnimKeyframeHandler:disconnect()
                                         end
+
+
 
 
                                         toolAnimName = ""
@@ -1558,13 +1983,19 @@ G2L_MODULES[G2L["2f"]] = {
                                         end
 
 
+
+
                                         return oldAnim
                                 end
+
+
 
 
                                 -------------------------------------------------------------------------------------------
                                 -------------------------------------------------------------------------------------------
                                 -- STATE CHANGE HANDLERS
+
+
 
 
                                 function onRunning(speed)
@@ -1584,9 +2015,13 @@ G2L_MODULES[G2L["2f"]] = {
                                 end
 
 
+
+
                                 function onDied()
                                         pose = "Dead"
                                 end
+
+
 
 
                                 function onJumping()
@@ -1594,6 +2029,8 @@ G2L_MODULES[G2L["2f"]] = {
                                         jumpAnimTime = jumpAnimDuration
                                         pose = "Jumping"
                                 end
+
+
 
 
                                 function onClimbing(speed)
@@ -1604,9 +2041,13 @@ G2L_MODULES[G2L["2f"]] = {
                                 end
 
 
+
+
                                 function onGettingUp()
                                         pose = "GettingUp"
                                 end
+
+
 
 
                                 function onFreeFall()
@@ -1617,9 +2058,13 @@ G2L_MODULES[G2L["2f"]] = {
                                 end
 
 
+
+
                                 function onFallingDown()
                                         pose = "FallingDown"
                                 end
+
+
 
 
                                 function onSeated()
@@ -1627,13 +2072,19 @@ G2L_MODULES[G2L["2f"]] = {
                                 end
 
 
+
+
                                 function onPlatformStanding()
                                         pose = "PlatformStanding"
                                 end
 
 
+
+
                                 -------------------------------------------------------------------------------------------
                                 -------------------------------------------------------------------------------------------
+
+
 
 
                                 function onSwimming(speed)
@@ -1649,11 +2100,15 @@ G2L_MODULES[G2L["2f"]] = {
                                 end
 
 
+
+
                                 function animateTool()
                                         if (toolAnim == "None") then
                                                 playToolAnimation("toolnone", toolTransitionTime, Humanoid, Enum.AnimationPriority.Idle)
                                                 return
                                         end
+
+
 
 
                                         if (toolAnim == "Slash") then
@@ -1662,11 +2117,15 @@ G2L_MODULES[G2L["2f"]] = {
                                         end
 
 
+
+
                                         if (toolAnim == "Lunge") then
                                                 playToolAnimation("toollunge", 0, Humanoid, Enum.AnimationPriority.Action)
                                                 return
                                         end
                                 end
+
+
 
 
                                 function getToolAnim(tool)
@@ -1679,7 +2138,11 @@ G2L_MODULES[G2L["2f"]] = {
                                 end
 
 
+
+
                                 local lastTick = 0
+
+
 
 
                                 function stepAnimate(currentTime)
@@ -1689,13 +2152,19 @@ G2L_MODULES[G2L["2f"]] = {
                                         lastTick = currentTime
 
 
+
+
                                         local climbFudge = 0
                                         local setAngles = false
+
+
 
 
                                         if (jumpAnimTime > 0) then
                                                 jumpAnimTime = jumpAnimTime - deltaTime
                                         end
+
+
 
 
                                         if (pose == "FreeFall" and jumpAnimTime <= 0) then
@@ -1713,10 +2182,14 @@ G2L_MODULES[G2L["2f"]] = {
                                         end
 
 
+
+
                                         -- Tool Animation handling
                                         local tool = Character:FindFirstChildOfClass("Tool")
                                         if tool and tool:FindFirstChild("Handle") then
                                                 local animStringValueObject = getToolAnim(tool)
+
+
 
 
                                                 if animStringValueObject then
@@ -1727,10 +2200,14 @@ G2L_MODULES[G2L["2f"]] = {
                                                 end
 
 
+
+
                                                 if currentTime > toolAnimTime then
                                                         toolAnimTime = 0
                                                         toolAnim = "None"
                                                 end
+
+
 
 
                                                 animateTool()                
@@ -1741,6 +2218,8 @@ G2L_MODULES[G2L["2f"]] = {
                                                 toolAnimTime = 0
                                         end
                                 end
+
+
 
 
                                 -- connect events
@@ -1756,6 +2235,8 @@ G2L_MODULES[G2L["2f"]] = {
                                 Humanoid.Swimming:connect(onSwimming)
 
 
+
+
                                 -- setup emote chat hook
                                 game:GetService("Players").LocalPlayer.Chatted:connect(function(msg)
                                         local emote = ""
@@ -1766,10 +2247,14 @@ G2L_MODULES[G2L["2f"]] = {
                                         end
 
 
+
+
                                         if (pose == "Standing" and emoteNames[emote] ~= nil) then
                                                 playAnimation(emote, EMOTE_TRANSITION_TIME, Humanoid)
                                         end
                                 end)
+
+
 
 
                                 -- emote bindable hook
@@ -1780,9 +2265,13 @@ G2L_MODULES[G2L["2f"]] = {
                                         end
 
 
+
+
                                         if emoteNames[emote] ~= nil then
                                                 -- Default emotes
                                                 playAnimation(emote, EMOTE_TRANSITION_TIME, Humanoid)
+
+
 
 
                                                 return true, currentAnimTrack
@@ -1791,8 +2280,12 @@ G2L_MODULES[G2L["2f"]] = {
                                                 playEmote(emote, EMOTE_TRANSITION_TIME, Humanoid)
 
 
+
+
                                                 return true, currentAnimTrack
                                         end
+
+
 
 
                                         -- Return false to indicate that the emote could not be played
@@ -1800,11 +2293,15 @@ G2L_MODULES[G2L["2f"]] = {
                                 end
 
 
+
+
                                 if Character.Parent ~= nil then
                                         -- initialize to idle
                                         playAnimation("idle", 0.1, Humanoid)
                                         pose = "Standing"
                                 end
+
+
 
 
                                 -- loop to handle timed state transitions and tool animations
@@ -1816,6 +2313,8 @@ G2L_MODULES[G2L["2f"]] = {
                                                 break
                                         end
                                 end
+
+
 
 
                                 return
@@ -2619,16 +3118,24 @@ local function C_2e()
         local Mouse = Player:GetMouse()
 
 
+
+
         repeat wait() until Player.CharacterAdded
         if Player.Character:WaitForChild("Humanoid").RigType == Enum.HumanoidRigType.R6 then script.Parent:Remove() return end
         if Player.Character:WaitForChild("Animate") then else script.Parent:Remove() return end
         if getgenv then if getgenv().Bubble then script.Parent:Remove() return else getgenv().Bubble = true end end
 
 
+
+
         print("Needs: Passed.")
 
 
+
+
         -- -- -- -- GUI
+
+
 
 
         local ScreenGui = script.Parent
@@ -2642,8 +3149,12 @@ local function C_2e()
         local UpdatesFrame = Background.Updates
 
 
+
+
         local MobileFolders = ScreenGui.Mobile
         local OpenCloseFrame = MobileFolders.OpenCloseFrame
+
+
 
 
         if RunService:IsStudio() then
@@ -2654,12 +3165,18 @@ local function C_2e()
         end
 
 
+
+
         local BlurEffect = Instance.new("BlurEffect", Lighting)
         BlurEffect.Size = 0 -- 17
         BlurEffect.Enabled = true
 
 
+
+
         -- Setup
+
+
 
 
         local FramePosition = {
@@ -2674,6 +3191,8 @@ local function C_2e()
         }
 
 
+
+
         UpdatesFrame.Position =  UDim2.new(UpdatesFrame.Position.X.Scale, 0, -1, 0)
         Background.Position = UDim2.new(-1, 0, 0, 0)
         AnimateFrame.Position = FramePosition.AnimateFrame[1]
@@ -2682,10 +3201,14 @@ local function C_2e()
         EmoteFrame.UIStroke.Transparency = 1
 
 
+
+
         -- Tween Animations
         TweenService:Create(Background, TweenInfo.new(2, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut, 0, false, 0), {
                 Position = UDim2.new(0, 0, 0, 0)
         }):Play()
+
+
 
 
         TweenService:Create(BlurEffect, TweenInfo.new(2, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut, 0, false, 0), {
@@ -2693,18 +3216,28 @@ local function C_2e()
         }):Play()
 
 
+
+
         print("GUI: Passed.")
 
 
+
+
         -- -- Values
+
+
 
 
         local AnimateName = "Bubble_Animate"
         local BundleAnimationSelected, BundleAnimationSelectedBefore = "Default", "Default"
 
 
+
+
         local Repeats = true
         local ProcessingAnimate = true
+
+
 
 
         local Keybinds = {
@@ -2712,10 +3245,14 @@ local function C_2e()
         }
 
 
+
+
         local Create = {}
         local Remove = {}
         local Change = {}
         local Sound = {}
+
+
 
 
         local GUI = {
@@ -2734,14 +3271,22 @@ local function C_2e()
         }
 
 
+
+
         local AnimationPackages = require(ScreenGui:FindFirstChild("AnimationPackages"))
         local Emotes = require(ScreenGui:FindFirstChild("Emotes"))
+
+
 
 
         print("Values: Passed.")
 
 
+
+
         -- -- Load Exploit Workspace
+
+
 
 
         if getgenv then
@@ -2754,10 +3299,16 @@ local function C_2e()
         end
 
 
+
+
         print("Exploit: Passed.")
 
 
+
+
         -- -- -- Functions
+
+
 
 
         function Sound:Create(contents)
@@ -2777,11 +3328,15 @@ local function C_2e()
         end
 
 
+
+
         function Remove:Animate()
                 if Player.Character:FindFirstChild("Animate") then
                         Player.Character:FindFirstChild("Animate"):Destroy()
                 end
         end
+
+
 
 
         function Create:Animate()
@@ -2797,7 +3352,11 @@ local function C_2e()
                 end
 
 
+
+
                 BundleAnimationSelected = "Default"
+
+
 
 
                 local function CreateAnimate ()
@@ -2806,10 +3365,14 @@ local function C_2e()
                         require(ScreenGui.OtherModule):MakeAnimate(Bubble_Animate)
 
 
+
+
                         SetBeforeAnimations()
                 end
                 task.spawn(CreateAnimate)
         end
+
+
 
 
         function Change:Animate(value)
@@ -2838,16 +3401,24 @@ local function C_2e()
         end
 
 
+
+
         function Change:Emote(value)
                 if Player.Character:FindFirstChild(AnimateName) then
                         local BubbleAnimate = Player.Character:FindFirstChild(AnimateName)
+
+
 
 
                         local Animation = Instance.new("Animation", Player.Character)
                         Animation.AnimationId = value
 
 
+
+
                         BubbleAnimate.PlayEmote:Invoke(Animation, 1, Player.Character.Humanoid)
+
+
 
 
                         task.delay(0.030, function()
@@ -2857,10 +3428,16 @@ local function C_2e()
         end
 
 
+
+
         print("Functions: Passed.")
 
 
+
+
         -- -- -- UI Functions
+
+
 
 
         -- Changing Animation
@@ -2870,9 +3447,13 @@ local function C_2e()
                         Button.Parent = ScrollingAnimateFrame
 
 
+
+
                         Button.Size = UDim2.new(0, 0, 0, 0)
                         Button.BackgroundTransparency = 1
                         Button.TextTransparency = 1
+
+
 
 
                         Button.Name = int
@@ -2903,6 +3484,8 @@ local function C_2e()
         end
 
 
+
+
         function GUI.Animate:ClearButtons ()
                 for int,value in pairs(ScrollingAnimateFrame:GetChildren()) do RunService.Heartbeat:Wait()
                         if value:IsA("TextButton") and value.Name ~= "AnimationButton" then
@@ -2923,7 +3506,11 @@ local function C_2e()
         end
 
 
+
+
         ----- E mOT es (Emotes)
+
+
 
 
         function GUI.Emote:GenerateButtons ()
@@ -2935,9 +3522,13 @@ local function C_2e()
                         Button.Parent = ScrollingEmoteFrame
 
 
+
+
                         Button.Size = UDim2.new(0, 0, 0, 0)
                         Button.BackgroundTransparency = 1
                         Button.TextTransparency = 1
+
+
 
 
                         Button.Name = int
@@ -2968,6 +3559,8 @@ local function C_2e()
         end
 
 
+
+
         function GUI.Emote:ClearButtons ()
                 for int,value in pairs(ScrollingEmoteFrame:GetChildren()) do RunService.Heartbeat:Wait()
                         if value:IsA("TextButton") and value.Name ~= "EmoteButton" then
@@ -2988,6 +3581,8 @@ local function C_2e()
         end
 
 
+
+
         -- Open/Close
         function GUI:OpenClose ()
                 if GUI.Open then
@@ -2997,10 +3592,14 @@ local function C_2e()
                         local TweenTime = 0.9
 
 
+
+
                         local BlurEffectTweenInfo = TweenInfo.new(TweenTime, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut, 0, false, 0)
                         local BlurEffectTweenGoal = {Size = 0}
                         local BlurEffectTween = TweenService:Create(BlurEffect, BlurEffectTweenInfo, BlurEffectTweenGoal)
                         BlurEffectTween:Play()
+
+
 
 
                         if GUI.OpenDirectionRight then
@@ -3012,6 +3611,8 @@ local function C_2e()
                                         Position = UDim2.new(UpdatesFrame.Position.X.Scale, 0, -1, 0)
                                 }):Play()
                         end
+
+
 
 
                         GUI.Emote:ClearButtons()
@@ -3027,15 +3628,21 @@ local function C_2e()
                         }):Play()
 
 
+
+
                         GUI.Animate:ClearButtons()
                         Sound:Create({
                                 SoundId = 1323739650,
                         })
 
 
+
+
                         TweenService:Create(AnimateFrame, TweenInfo.new(2, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut, 0, false, 0), {
                                 Position = FramePosition.AnimateFrame[1]
                         }):Play()
+
+
 
 
                         local BackgroundTweenInfo = TweenInfo.new(TweenTime, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut, 0, false, 0)
@@ -3047,6 +3654,8 @@ local function C_2e()
                         BackgroundTween:Play()
 
 
+
+
                         task.delay(1, function()
                                 GUI.CanBeOpen = true
                         end)
@@ -3056,16 +3665,22 @@ local function C_2e()
                         local TweenTime = 0.9
 
 
+
+
                         local BlurEffectTweenInfo = TweenInfo.new(TweenTime, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut, 0, false, 0)
                         local BlurEffectTweenGoal = {Size = 17}
                         local BlurEffectTween = TweenService:Create(BlurEffect, BlurEffectTweenInfo, BlurEffectTweenGoal)
                         BlurEffectTween:Play()
 
 
+
+
                         local BackgroundTweenInfo = TweenInfo.new(TweenTime, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut, 0, false, 0)
                         local BackgroundTweenGoal = {Position = UDim2.new(0, 0, 0, 0)}
                         local BackgroundTween = TweenService:Create(Background, BackgroundTweenInfo, BackgroundTweenGoal)
                         BackgroundTween:Play()
+
+
 
 
                         task.delay(0.6, function()
@@ -3098,6 +3713,8 @@ local function C_2e()
                         end)
                 end
         end
+
+
 
 
         OpenCloseFrame.Button.MouseButton1Click:Connect(function()
@@ -3143,6 +3760,8 @@ local function C_2e()
         end)
 
 
+
+
         function InputBegan (input, gameProcessedEvent)
                 if not gameProcessedEvent then
                         if input.KeyCode == Keybinds.OpenCloseKey then
@@ -3155,10 +3774,14 @@ local function C_2e()
         UserInputService.InputBegan:Connect(InputBegan)
 
 
+
+
         function CharactedAdded (character:Model)
                 Create:Animate()
         end
         Player.CharacterAdded:Connect(CharactedAdded)
+
+
 
 
         task.delay(2, function()
@@ -3185,7 +3808,11 @@ local function C_2e()
         end)
 
 
+
+
         print("Every Function: Passed")
+
+
 
 
         -- -- -- -- Workspace Exploit Memory
@@ -3196,12 +3823,18 @@ local function C_2e()
         end
 
 
+
+
         print("Exploit Memory: Passed")
+
+
 
 
         if Player.CharacterAdded then
                 Create:Animate()
         end
+
+
 
 
         -- Repeats
@@ -3235,8 +3868,14 @@ local function C_2e()
         end
 
 
+
+
 end;
 task.spawn(C_2e);
 
 
+
+
 return G2L["1"], require;
+ 
+end
