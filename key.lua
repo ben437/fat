@@ -28,6 +28,7 @@ Tab:AddButton({
     if key == oh then
       	print("Entered right key.")
           OrionLib:Destroy()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/ben437/fat/main/realkey1.lua')))()				
           loadstring(game:HttpGet('https://raw.githubusercontent.com/ben437/fat/main/yeah.rizz'))()
           writefile(filename, "sigma")
           else
