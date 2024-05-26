@@ -2,6 +2,10 @@ local userId = game.Players.LocalPlayer.UserId
 local thumbType = Enum.ThumbnailType.HeadShot
 local thumbSize = Enum.ThumbnailSize.Size420x420
 local thumbUrl = game:GetService("Players"):GetUserThumbnailAsync(userId, thumbType, thumbSize)
+
+local G2L = {};
+
+
 local bubble = game.CoreGui:FindFirstChild("Bubble")
 
 
@@ -10,10 +14,6 @@ if bubble then
     
 else
    
-local G2L = {};
-
-
-
 
 -- StarterGui.Bubble
 G2L["1"] = Instance.new("ScreenGui", game.CoreGui);
