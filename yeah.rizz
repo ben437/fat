@@ -6,7 +6,7 @@ local thumbUrl = game:GetService("Players"):GetUserThumbnailAsync(userId, thumbT
 local G2L = {};
 
 
-local bubble = game.CoreGui:FindFirstChild("Bubble")
+l
 
 
 
@@ -3876,4 +3876,4 @@ task.spawn(C_2e);
 
 return G2L["1"], require;
  
-end
+
