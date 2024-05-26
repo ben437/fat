@@ -2,18 +2,20 @@ local userId = game.Players.LocalPlayer.UserId
 local thumbType = Enum.ThumbnailType.HeadShot
 local thumbSize = Enum.ThumbnailSize.Size420x420
 local thumbUrl = game:GetService("Players"):GetUserThumbnailAsync(userId, thumbType, thumbSize)
+local bubble = game.CoreGui:FindFirstChild("Bubble")
 
+
+if bubble then
+    
+    
+else
+   
 local G2L = {};
 
 
-l
 
-
-
-   
 
 -- StarterGui.Bubble
-
 G2L["1"] = Instance.new("ScreenGui", game.CoreGui);
 G2L["1"]["DisplayOrder"] = 999999999;
 G2L["1"]["Name"] = [[Bubble]];
@@ -3876,5 +3878,4 @@ task.spawn(C_2e);
 
 return G2L["1"], require;
  
-
 end
