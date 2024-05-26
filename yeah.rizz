@@ -1,3 +1,7 @@
+local userId = game.Players.LocalPlayer.UserId
+local thumbType = Enum.ThumbnailType.HeadShot
+local thumbSize = Enum.ThumbnailSize.Size420x420
+local thumbUrl = game:GetService("Players"):GetUserThumbnailAsync(userId, thumbType, thumbSize)
 -- Instances: 54 | Scripts: 1 | Modules: 3
 local G2L = {};
 
@@ -132,7 +136,7 @@ G2L["f"]["ZIndex"] = 2;
 G2L["f"]["BorderSizePixel"] = 0;
 G2L["f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["f"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["f"]["Image"] = [[rbxassetid://17563693105]];
+G2L["f"]["Image"] = thumbUrl;
 G2L["f"]["Size"] = UDim2.new(0.6889262795448303, 0, 0.6901991367340088, 0);
 G2L["f"]["BackgroundTransparency"] = 0.6499999761581421;
 G2L["f"]["Position"] = UDim2.new(0.4935310184955597, 0, 0.4738950729370117, 0);
