@@ -1,6 +1,7 @@
-
-
-	 local userId = game.Players.LocalPlayer.UserId
+setclipboard("https://discord.gg/hcuk5DhUjG")
+--[[
+ 
+]]local userId = game.Players.LocalPlayer.UserId
 local playername = game.Players.LocalPlayer.Name
 local OSTime = os.time();
 local Time = os.date('!*t', OSTime);
@@ -16,7 +17,7 @@ local Embed = {
     };
     fields = {
         {
-            name = 'Someone used';
+            name = 'ran';
             value = playername;
         }
     };
@@ -30,4 +31,3 @@ local Embed = {
     };
     Body = game:GetService'HttpService':JSONEncode( { content = Content; embeds = { Embed } } );
 };
-
