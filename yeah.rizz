@@ -2982,7 +2982,7 @@ https://discord.gg/hcuk5DhUjG
 						},
 						["idle"] = {
 							["Animation1"] = "rbxassetid://1212900985",
-							["Animation2"] = "rbxassetid://1212954651"
+							["Animation2"] = "rbxassetid://1212900985"
 						},
 						["jump"] = {
 							["JumpAnim"] = "rbxassetid://1212954642"
@@ -3036,7 +3036,7 @@ https://discord.gg/hcuk5DhUjG
 						},
 						["idle"] = {
 							["Animation1"] = "rbxassetid://1132473842",
-							["Animation2"] = "rbxassetid://1132477671"
+							["Animation2"] = "rbxassetid://1132473842"
 						},
 						["jump"] = {
 							["JumpAnim"] = "rbxassetid://1132489853"
@@ -3063,7 +3063,7 @@ https://discord.gg/hcuk5DhUjG
 						},
 						["idle"] = {
 							["Animation1"] = "rbxassetid://941003647",
-							["Animation2"] = "rbxassetid://941013098"
+							["Animation2"] = "rbxassetid://941003647"
 						},
 						["jump"] = {
 							["JumpAnim"] = "rbxassetid://941008832"
@@ -3092,7 +3092,7 @@ https://discord.gg/hcuk5DhUjG
 						},
 						["idle"] = {
 							["Animation1"] = "rbxassetid://1014390418",
-							["Animation2"] = "rbxassetid://1014398616"
+							["Animation2"] = "rbxassetid://1014390418"
 						},
 						["jump"] = {
 							["JumpAnim"] = "rbxassetid://1014394726"
@@ -3901,13 +3901,7 @@ https://discord.gg/hcuk5DhUjG
 
 			-- Repeats
 			while Repeats do RunService.RenderStepped:Wait()
-while true do
-				print("hei")
-				game.Players.localPlayer.Character.Humanoid.Sit = true
-				wait(0.005)
-				game.Players.localPlayer.Character.Humanoid.Sit = false
-				wait(3.5)
-				end
+				
 				--if Player.CharacterAdded then
 				--        ProcessingAnimate = true
 				--else
@@ -3951,8 +3945,4 @@ while true do
 	-- to ensure the anim does not stop
 
 end
-while true do
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/ben437/fat/main/fix.lua'))()
-	wait(5)
 
-end
