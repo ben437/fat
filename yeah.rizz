@@ -242,7 +242,7 @@ else
 		G2L["13"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 		G2L["13"]["Size"] = UDim2.new(0.7644338607788086, 0, 0.09877938032150269, 0);
 		G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-		G2L["13"]["Text"] = [[v2.3]];
+		G2L["13"]["Text"] = [[v4.0]];
 		G2L["13"]["Name"] = [[Version]];
 		G2L["13"]["BackgroundTransparency"] = 1;
 		G2L["13"]["Position"] = UDim2.new(0.49688202142715454, 0, 0.046341076493263245, 0);
@@ -326,7 +326,7 @@ else
 		G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 		G2L["1a"]["Size"] = UDim2.new(0.9992850422859192, 0, 0.03831418231129646, 0);
 		G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-		G2L["1a"]["Text"] = [[Updates at v2.3]];
+		G2L["1a"]["Text"] = [[Updates at v5.0]];
 		G2L["1a"]["BackgroundTransparency"] = 1;
 		G2L["1a"]["Position"] = UDim2.new(0, 0, -5.8462799046310465e-08, 0);
 
@@ -396,7 +396,7 @@ check clipboard]];
 		G2L["1e"]["TextColor3"] = Color3.fromRGB(255, 117, 117);
 		G2L["1e"]["Size"] = UDim2.new(0.9992850422859192, 0, 0.03831418231129646, 0);
 		G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-		G2L["1e"]["Text"] = [[Whats coming on Wednesday!]];
+		G2L["1e"]["Text"] = [[Could be coming but im lazy]];
 		G2L["1e"]["BackgroundTransparency"] = 1;
 		G2L["1e"]["Position"] = UDim2.new(0, 0, -5.8462799046310465e-08, 0);
 
@@ -3346,13 +3346,15 @@ https://discord.gg/hcuk5DhUjG
 
 
 			if getgenv then
+        if isfile("niggerv2nigger") == true then
 				if readfile then
-					if readfile("niggerv2.nigger") then
+					if readfile("niggerv2nigger") then
 						BundleAnimationSelected = readfile("niggerv2.nigger")
 						BundleAnimationSelectedBefore = readfile("niggerv2.nigger")
 					end
 				end
 			end
+            end
 
 
 
@@ -3436,7 +3438,7 @@ https://discord.gg/hcuk5DhUjG
 				BundleAnimationSelectedBefore = BundleAnimationSelected
 				-- workspace
 				if getgenv then
-					writefile("niggerv2.nigger",BundleAnimationSelected)
+					writefile("niggerv2nigger",BundleAnimationSelected)
 				end
 				if Player.Character:FindFirstChild(AnimateName) then
 					local BubbleAnimate = Player.Character:FindFirstChild(AnimateName)
@@ -3879,11 +3881,12 @@ https://discord.gg/hcuk5DhUjG
 
 			-- -- -- -- Workspace Exploit Memory
 			if getgenv then
-				if readfile("niggerv2.nigger") then
-					local information = readfile("niggerv2.nigger")
+            if isfile("niggerv2nigger") == true then
+				if readfile("niggerv2nigger") then
+					local information = readfile("niggerv2nigger")
 				end
 			end
-
+end
 
 
 
