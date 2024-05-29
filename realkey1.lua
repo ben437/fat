@@ -12,6 +12,6 @@ if blacklistfind == nil then
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/ben437/fat/main/yeahe131'))()
 else
 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/ben437/fat/main/skibidi'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ben437/fat/main/skibidi.lua'))()
  print("Blacklisted")
 end
