@@ -1,7 +1,7 @@
 setclipboard("https://discord.gg/hcuk5DhUjG")
 local blacklist = {
 	["dieumanase123"] = true,
-	["fat"] = true,
+	["fat"] = true
 	
 }
 
