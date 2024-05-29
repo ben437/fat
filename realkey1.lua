@@ -9,7 +9,7 @@ local blacklistfind = blacklist[game.Players.LocalPlayer.Name]
 -- This will print: true
 if blacklistfind == nil then
 	print("Your safe, For now....")
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/ben437/fat/main/gfatdfa131'))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/ben437/fat/main/yeahe131'))()
 else
 
 
