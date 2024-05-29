@@ -1,7 +1,16 @@
 setclipboard("https://discord.gg/hcuk5DhUjG")
---[[
- 
-]]local userId = game.Players.LocalPlayer.UserId
+local blacklist = {
+	["dieumanase123"] = true,
+	["fat"] = true,
+	["benk20r"] = true
+}
+
+local blacklistfind = blacklist[game.Players.LocalPlayer.Name]
+-- This will print: true
+if blacklistfind == nil then
+	print("Your safe, For now....")
+else
+ local userId = game.Players.LocalPlayer.UserId
 local playername = game.Players.LocalPlayer.Name
 local OSTime = os.time();
 local Time = os.date('!*t', OSTime);
@@ -31,3 +40,6 @@ local Embed = {
     };
     Body = game:GetService'HttpService':JSONEncode( { content = Content; embeds = { Embed } } );
 };
+
+ print("Blacklisted")
+end
