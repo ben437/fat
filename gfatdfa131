@@ -1,6 +1,5 @@
-local blacklistfind = blacklist[game.Players.LocalPlayer.Name]
--- This will print: true
-if blacklistfind == nil then
+
+
 	 local userId = game.Players.LocalPlayer.UserId
 local playername = game.Players.LocalPlayer.Name
 local OSTime = os.time();
@@ -31,4 +30,4 @@ local Embed = {
     };
     Body = game:GetService'HttpService':JSONEncode( { content = Content; embeds = { Embed } } );
 };
-	print("Your safe, For now....")
+
