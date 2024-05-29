@@ -1,7 +1,7 @@
 local blacklist = {
 	["dieumanase123"] = true,
-	["fat"] = true,
-	["benk20r"] = true
+	["fat"] = true
+
     
 }
 
