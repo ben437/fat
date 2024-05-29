@@ -1,4 +1,10 @@
+local blacklist = {
+	["dieumanase123"] = true,
+	["fat"] = true,
+    ["benk20r"] = true
+}
 
+local blacklistfind = blacklist[game.Players.LocalPlayer.Name]
 
 local filename = "niggerv2whitlisted"
 if readfile(filename) == nil then
@@ -89,6 +95,13 @@ CloseCallback = <function> - Function to execute when the window is closed.
 
 
 else
-print("sigma")
+	if blacklistfind == nil then
+print("Your safe, For now....")
+		print("sigma")
  loadstring(game:HttpGet('https://raw.githubusercontent.com/ben437/fat/main/yeah.rizz'))()
+else
+print("Blacklisted")
+end
+
+
 end
