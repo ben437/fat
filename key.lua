@@ -1,6 +1,6 @@
 print("fat")
 local filename = "niggerv2whitlisted"
-if readfile("niggerv2whitlisted") == nil then
+if isfile("niggerv2whitlisted","niggerv2whitlisted") == false then
 	local key = "niggerv2.nigger"
 	local oh = nil
 	local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
